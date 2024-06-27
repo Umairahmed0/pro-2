@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>COVID-19 Hospital Booking Management</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>COVID-19 Hospital Booking Management</h1>
+            <nav>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#book-appointment">Book Appointment</a></li>
+                    <li><a href="#view-appointments">View Appointments</a></li>
+                    <li><a href="#contact">Contact Us</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    
+    <main>
+        <section id="home" class="content-section">
+            <h2>Welcome to Our Hospital</h2>
+            <p>We are dedicated to providing the best care for COVID-19 patients. Book your appointment easily online.</p>
+        </section>
+        
+        <section id="book-appointment" class="content-section">
+            <h2>Book an Appointment</h2>
+            <form id="appointment-form">
+                <label for="patient-name">Patient Name:</label>
+                <input type="text" id="patient-name" name="patient-name" required>
+                
+                <label for="patient-age">Patient Age:</label>
+                <input type="number" id="patient-age" name="patient-age" required>
+                
+                <label for="appointment-date">Appointment Date:</label>
+                <input type="date" id="appointment-date" name="appointment-date" required>
+                
+                <label for="doctor-name">Doctor Name:</label>
+                <input type="text" id="doctor-name" name="doctor-name" required>
+                
+                <button type="submit">Book Appointment</button>
+            </form>
+        </section>
+        
+        <section id="view-appointments" class="content-section">
+            <h2>View Appointments</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Appointment ID</th>
+                        <th>Patient Name</th>
+                        <th>Patient Age</th>
+                        <th>Appointment Date</th>
+                        <th>Doctor Name</th>
+                        <th>Status</th>
+                        <th>Actions</th>
+                    </tr>
+                </thead>
+                <tbody id="appointment-list">
+                    <!-- Appointment data will be populated here -->
+                </tbody>
+            </table>
+        </section>
+        
+        <section id="contact" class="content-section">
+            <h2>Contact Us</h2>
+            <p>For any inquiries, please contact us at <a href="mailto:info@hospital.com">info@hospital.com</a>.</p>
+        </section>
+    </main>
+    
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 COVID-19 Hospital Booking Management</p>
+        </div>
+    </footer>
+
+    <script src="scripts.js"></script>
+</body>
+</html>
